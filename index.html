@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YELLASIRI RAMU — Portfolio</title>
+  <meta name="description" content="RAMU YELLASIRI — PYTHON Web Developer" />
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#141414;
+      --muted:#c7c7c7;
+      --accent:#d4af37; /* gold */
+      --accent2:#f5d76e; /* soft gold */
+      --glass: rgba(255,255,255,0.05);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg,var(--bg),#040404 80%);
+      color:#e6eef3;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:24px;
+    }
+    .container{max-width:1100px;margin:0 auto}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;padding:16px 0
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3dd6ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#061017}
+    h1{font-size:20px;margin:0}
+    .tag{color:var(--muted);font-size:13px}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+    nav a.cta{background:linear-gradient(90deg,#00e0a1,#6ee7b7);color:#071019;padding:8px 12px;border-radius:8px;margin-left:22px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center;padding:48px 0}
+    .intro h2{font-size:40px;margin:0 0 12px}
+    .intro p{color:var(--muted);margin:0 0 18px}
+    .buttons{display:flex;gap:12px}
+    .btn{padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:var(--glass);color:inherit;text-decoration:none;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#00e0a1);color:#061017;border:none}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .project-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .proj{padding:14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+    .proj h3{margin:0 0 8px;font-size:16px}
+    .proj p{margin:0 0 12px;color:var(--muted);font-size:13px}
+    .proj a{font-size:13px;color:var(--accent);text-decoration:none}
+
+    .about-skills{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+    .skills li{list-style:none;padding:6px 0;color:var(--muted)}
+
+    footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .project-list{grid-template-columns:1fr}
+      nav a{display:none}
+      .brand h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PU</div>
+        <div>
+          <h1>RAMU YELLASIRI</h1>
+          <div class="tag">Aspring python fullstack Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" style="background:linear-gradient(135deg,#0b0b0b,#1a1a1a);">
+      <div class="intro">
+        <img src="ramu.jpeg" alt="image" style="width:170px;height:180px;border-radius:60%;object-fit:cover;border:3px solid var(--accent);margin-bottom:18px;">
+        <h2>Hi, I’m RAMU — a passionate developer focusing on Python and building responsive, user-friendly web applications.</h2>
+      
+        <p></p>I build responsive and modern web solutions for small businesses, including branding websites, e-commerce prototypes, and business portals. I deliver fast, accessible, and scalable applications using HTML, CSS, JavaScript, and expanding my expertise in Python.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="my resume.pdf" download>Download Resume</a>
+        </div>
+
+        <div class="card" style="margin-top:20px;">
+          <strong>Quick facts</strong>
+          <div style="color:var(--muted);margin-top:8px;font-size:14px">freelance Web Developer  • Focused on Responsive and User-Friendly Design • Experienced in GitHub Pages Deployment</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Contact</h3>
+        <p style="color:var(--muted)">Looking to hire or collaborate? Send a message — I usually reply within 24 hours.</p>
+        <p style="margin-top:12px"><strong>Email</strong><br><a href="mailto:professionalwebdevelop@gmail.com" style="color:var(--accent);text-decoration:none">professionalwebdevelop@gmail.com</a></p>
+        <p style="margin-top:8px"><strong>Location</strong><br><span style="color:var(--muted)">India</span></p>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin-bottom:6px">Selected Projects</h2>
+      <p style="color:var(--muted);margin-top:0">A few recent projects I built and deployed on GitHub Pages.</p>
+
+     <div class="project-list">
+
+  <div class="proj card">
+    <h3>Simple Calculator</h3>
+    <p>Responsive calculator built using HTML, CSS, and JavaScript with real-time arithmetic operations and clean UI.</p>
+    <a href="https://github.com/Ramuroy28/simple-calculator/blob/main/simple_calculator.py/" target="_blank" rel="noopener">Open live site →</a>
+  </div>
+
+  <div class="proj card">
+    <h3>Quiz Application</h3>
+    <p>Interactive quiz app with multiple-choice questions, answer validation, and dynamic score display.</p>
+    <a href="https://github.com/Ramuroy28/Simple-quiz/blob/main/simple_quiz.py" target="_blank" rel="noopener">Open live site →</a>
+  </div>
+
+  <div class="proj card">
+    <h3>To-Do List App</h3>
+    <p>Task management application using JavaScript and Local Storage with add, update, and delete features.</p>
+    <a href="https://github.com/Ramuroy28/To-Do-List-App/blob/main/to_do_list_app.py" target="_blank" rel="noopener">Open live site →</a>
+  </div>
+
+  <div class="proj card">
+    <h3>Student Report Card</h3>
+    <p>Web app to manage student marks with percentage calculation and grade generation system.</p>
+    <a href="https://github.com/Ramuroy28/student-report-card/blob/main/student_report_card%20.py" target="_blank" rel="noopener">Open live site →</a>
+  </div>
+
+  <div class="proj card">
+    <h3>Password Protector</h3>
+    <p>Password tool to generate and evaluate strong passwords using JavaScript with basic security validation.</p>
+    <a href="https://github.com/Ramuroy28/password-protector/blob/main/ceasar_chiper.py" target="_blank" rel="noopener">Open live site →</a>
+  </div>
+
+</div>
+    </section>
+
+    <section id="about" class="about-skills">
+      <div class="card">
+        <h3>About Me</h3>
+        <p style="color:var(--muted)">Freelance web developer skilled in HTML, CSS, JavaScript, and Python, with experience in building responsive web applications and solving real-world problems..</p>
+        <p style="color:var(--muted)"><strong>Tools:</strong>  PYTHON ,HTML, CSS, JavaScript, Git, GitHub Pages, VS Code</p>
+      </div>
+
+      <div class="card">
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>PYTHON</li>
+          <li>Responsive Web Design</li>
+          <li>UI/UX Fundamentals</li>
+          <li>SEO Basics & Performance</li>
+          <li>Version Control (Git)</li>
+          <li>Deployment on GitHub Pages</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p style="color:var(--muted)">Want me to build a site for your business? Fill the form below or email me directly.</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain" style="margin-top:12px">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input name="name" placeholder="Your name" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required>
+            <input name="email" placeholder="Your email" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required>
+          </div>
+          <textarea name="message" placeholder="Message" rows="4" style="width:100%;margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required></textarea>
+          <div style="margin-top:10px">
+            <button class="btn primary" type="submit">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year">2024</span> Yellasiri RAMU - python web developer    </footer>
+  </div>
+
+  <script>
+    // small JS: update year & smooth scroll
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});});
+    });
+  </script>
+</body>
+</html>

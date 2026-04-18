@@ -1,0 +1,90 @@
+.box1{
+    background-color: beige;
+    text-align:center;
+    padding: 20px;
+    height: 100px;
+    margin-bottom:2px;  
+      
+}
+.box{
+    background-color:beige;
+    text-align:center;
+    padding: 10px;
+    height: 50px;
+    margin-top: 2px;
+
+}
+.nenu{
+    text-align:center;
+    font-size: 30px;
+    background-color: beige;
+    margin-top: 0%;
+    margin-bottom: 2%;
+
+}
+.about-me{
+    background-color:beige;
+    text-align:left;
+    padding:20px;
+    
+    height:50%;
+    margin-bottom:2px;
+    display: flex;
+    gap:80px;
+    font-size: 18px;   
+  line-height: 1.6;
+}
+.my-photo{
+    align-items:right;
+    justify-content: right;
+    margin-right: 5px;
+    width:200px;
+
+}
+.interests{
+    background-color:beige;
+    text-align:center;
+    font-size:18px;
+    margin-top:0%;
+    margin-bottom:0%;
+}
+my-interests{
+    margin-top:0%;
+    margin-bottom:0%;
+}
+.achieve{
+    background-color:beige;
+    text-align:center;
+    font-size:18px;
+    margin-top:0%;
+    margin-bottom:0%;
+}
+.acheivements{
+    background-color:beige;
+    text-align:center;
+    font-size:18px;
+    margin-top:0%;
+    margin-bottom:0%;
+}
+.mystory{
+    background-color:beige;
+    text-align:center;
+    font-size:18px;
+    margin-top:0%;
+    margin-bottom:0%; 
+}
+.myskills{
+    background-color:beige;
+    text-align:center;
+    font-size:18px;
+    margin-top:0%;
+    margin-bottom:0%; 
+}
+
+footer{
+     background-color:beige;
+    text-align:center;
+    font-size:18px;
+    margin-top:0%;
+    margin-bottom:0%; 
+}
