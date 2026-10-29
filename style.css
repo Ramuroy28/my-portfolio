@@ -88,3 +88,17 @@ footer{
     margin-top:0%;
     margin-bottom:0%; 
 }
+.logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f5d76e, #d4af37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #0b0b0b;
+    box-shadow: 0 4px 18px rgba(212, 175, 55, 0.2);
+}
